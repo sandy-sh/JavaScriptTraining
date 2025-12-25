@@ -3,56 +3,56 @@
 A collection of JavaScript challenge projects I completed while studying on freeCodeCamp.org.
 This repository serves as a learning log, code archive, and progress tracker for my JavaScript journey.
 
-📌 About This Repository
+## 📌 About This Repository
 
-This repository contains:
+### This repository contains:
 
-● Small JavaScript programs
+1.  Small JavaScript programs
 
-● Coding challenges
+2.  Coding challenges
 
-● Algorithm solutions
+3.  Algorithm solutions
 
-● Logic exercises
+4.  Logic exercises
 that I completed from freeCodeCamp.
 
-Each file represents a step in improving:
+### Each file represents a step in improving:
 
-● problem-solving skills
+1.  problem-solving skills
 
-● JavaScript fundamentals
+2.  JavaScript fundamentals
 
-● algorithmic thinking
+3.  algorithmic thinking
 
-🛠 Topics Covered
+## 🛠 Topics Covered
 
-The challenges in this repository include:
+### The challenges in this repository include:
 
-● Variables & Data Types
+1.  Variables & Data Types
 
-● Functions & Scope
+2.  Functions & Scope
 
-● Conditionals (if, else, switch)
+3.  Conditionals (if, else, switch)
 
-● Loops
+4.  Loops
 
-● Arrays & Objects
+5.  Arrays & Objects
 
-● String manipulation
+6.  String manipulation
 
-● Math & Logic
+7.  Math & Logic
 
-● Algorithms
+8.  Algorithms
 
-● Debugging & Refactoring
+9.  Debugging & Refactoring
 
-📂 Project Structure
+## 📂 Project Structure
 
-Each file or folder contains:
+### Each file or folder contains:
 
-● One or more JavaScript challenges
+1.  One or more JavaScript challenges
 
-● Code written while completing freeCodeCamp exercises
+2.  Code written while completing freeCodeCamp exercises
 
 Example:
 
@@ -64,54 +64,54 @@ Example:
 /leap-year.js
 ```
 
-(Structure may change as the repository grows.)
+_(Structure may change as the repository grows.)_
 
-🎯 Purpose
+## 🎯 Purpose
 
-This repository is used to:
+### This repository is used to:
 
-● Track my learning progress
+1.  Track my learning progress
 
-● Store all challenge solutions in one place
+2.  Store all challenge solutions in one place
 
-● Practice writing clean and readable JavaScript
+3.  Practice writing clean and readable JavaScript
 
-● Build a foundation for more advanced projects
+4.  Build a foundation for more advanced projects
 
-🧪 How to Run the Code
+## 🧪 How to Run the Code
 
-Most files can be run with:
+### Most files can be run with:
 
 ```bash
 node filename.js
 ```
 
-Or tested inside:
+### Or tested inside:
 
-● Browser console
+1.  Browser console
 
-● VS Code
+2.  VS Code
 
-● Any JavaScript environment
+3.  Any JavaScript environment
 
-🚀 Future Plans
+## 🚀 Future Plans
 
-As my skills grow, this repository may expand to include:
+### As my skills grow, this repository may expand to include:
 
-● More advanced JavaScript challenges
+1.  More advanced JavaScript challenges
 
-● ES6+ features
+2.  ES6+ features
 
-● Refactored solutions
+3.  Refactored solutions
 
-● Performance improvements
+4.  Performance improvements
 
-📚 Learning Platform
+## 📚 Learning Platform
 
 All challenges come from:
 https://www.freecodecamp.org
 
-✍️ Author
+## ✍️ Author
 
 Sandy Syarif Hartanto
 JavaScript learner & developer in progress 🚀
