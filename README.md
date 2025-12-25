@@ -7,61 +7,62 @@ This repository serves as a learning log, code archive, and progress tracker for
 
 This repository contains:
 
-Small JavaScript programs
+● Small JavaScript programs
 
-Coding challenges
+● Coding challenges
 
-Algorithm solutions
+● Algorithm solutions
 
-Logic exercises
+● Logic exercises
 that I completed from freeCodeCamp.
 
 Each file represents a step in improving:
 
-problem-solving skills
+● problem-solving skills
 
-JavaScript fundamentals
+● JavaScript fundamentals
 
-algorithmic thinking
+● algorithmic thinking
 
 🛠 Topics Covered
 
 The challenges in this repository include:
 
-Variables & Data Types
+● Variables & Data Types
 
-Functions & Scope
+● Functions & Scope
 
-Conditionals (if, else, switch)
+● Conditionals (if, else, switch)
 
-Loops
+● Loops
 
-Arrays & Objects
+● Arrays & Objects
 
-String manipulation
+● String manipulation
 
-Math & Logic
+● Math & Logic
 
-Algorithms
+● Algorithms
 
-Debugging & Refactoring
+● Debugging & Refactoring
 
 📂 Project Structure
 
 Each file or folder contains:
 
-One or more JavaScript challenges
+● One or more JavaScript challenges
 
-Code written while completing freeCodeCamp exercises
+● Code written while completing freeCodeCamp exercises
 
 Example:
 
+```bash
 /basic-algorithms
 /loops
 /string-manipulation
 /card-counter.js
 /leap-year.js
-
+```
 
 (Structure may change as the repository grows.)
 
@@ -69,40 +70,41 @@ Example:
 
 This repository is used to:
 
-Track my learning progress
+● Track my learning progress
 
-Store all challenge solutions in one place
+● Store all challenge solutions in one place
 
-Practice writing clean and readable JavaScript
+● Practice writing clean and readable JavaScript
 
-Build a foundation for more advanced projects
+● Build a foundation for more advanced projects
 
 🧪 How to Run the Code
 
 Most files can be run with:
 
+```bash
 node filename.js
-
+```
 
 Or tested inside:
 
-Browser console
+● Browser console
 
-VS Code
+● VS Code
 
-Any JavaScript environment
+● Any JavaScript environment
 
 🚀 Future Plans
 
 As my skills grow, this repository may expand to include:
 
-More advanced JavaScript challenges
+● More advanced JavaScript challenges
 
-ES6+ features
+● ES6+ features
 
-Refactored solutions
+● Refactored solutions
 
-Performance improvements
+● Performance improvements
 
 📚 Learning Platform
 
@@ -113,3 +115,4 @@ https://www.freecodecamp.org
 
 Sandy Syarif Hartanto
 JavaScript learner & developer in progress 🚀
+
