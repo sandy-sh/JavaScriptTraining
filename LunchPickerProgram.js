@@ -9,3 +9,7 @@ function addLunchToEnd (lunches, lunchItem) {
 lunches.push(lunchItem);
 return `${lunchItem} added to the end of the lunch menu.`
 }
+
+function removeLastLunch (lunches) {
+  
+}
