@@ -3,13 +3,13 @@ let lunches = ["Pizza", "Burger"];
 function addLunchToEnd(lunches, lunchItem) {
   lunches.push(lunchItem);
   console.log(`${lunchItem} added to the end of the lunch menu.`);
-  return lunches;
+  console.log(lunches)
 }
 
 function addLunchToStart(lunches, lunchItem) {
   lunches.unshift(lunchItem);
   console.log(`${lunchItem} added to the start of the lunch menu.`);
-  return lunches;
+  console.log(lunches);
 }
 
 function removeLastLunch(lunches) {
@@ -18,7 +18,7 @@ function removeLastLunch(lunches) {
   } else {
     let lastLunch = lunches.pop();
     console.log(`${lastLunch} removed from the end of the lunch menu.`);
-    return lunches;
+    console.log(lunches);
   }
 }
 
@@ -28,7 +28,7 @@ function removeFirstLunch(lunches) {
   } else {
     let lastLunch = lunches.shift();
     console.log(`${lastLunch} removed from the start of the lunch menu.`);
-    return lunches;
+    console.log(lunches);
   }
 }
 
@@ -49,9 +49,9 @@ function showLunchMenu(lunches) {
   }
 }
 
-console.log(addLunchToEnd(lunches, "Tacos"));
-console.log(addLunchToStart(lunches, "Sushi"));
-console.log(removeLastLunch(lunches));
-console.log(removeFirstLunch(lunches));
-console.log(getRandomLunch(lunches));
-console.log(showLunchMenu(lunches));
+addLunchToEnd(lunches, "Tacos");
+addLunchToStart(lunches, "Sushi");
+removeLastLunch(lunches);
+removeFirstLunch(lunches);
+getRandomLunch(lunches);
+showLunchMenu(lunches);
