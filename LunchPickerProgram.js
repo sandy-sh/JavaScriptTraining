@@ -32,7 +32,17 @@ function removeFirstLunch(lunches) {
   }
 }
 
+function getRandomLunch(lunches) {
+  if (lunches.length === 0) {
+    console.log("No lunches available.");
+  } else {
+    let pickLunch = Math.floor(Math.random() * lunches.length);
+    console.log(`Randomly selected lunch: ${lunches[pickLunch]}`);
+  }
+}
+
 console.log(addLunchToEnd(lunches, "Tacos"));
 console.log(addLunchToStart(lunches, "Sushi"));
 console.log(removeLastLunch(lunches));
 console.log(removeFirstLunch(lunches));
+console.log(getRandomLunch(lunches));
