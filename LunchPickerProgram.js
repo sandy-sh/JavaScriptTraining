@@ -22,6 +22,17 @@ function removeLastLunch(lunches) {
   }
 }
 
+function removeFirstLunch(lunches) {
+  if (lunches.length === 0) {
+    console.log("No lunches to remove.");
+  } else {
+    let lastLunch = lunches.shift();
+    console.log(`${lastLunch} removed from the start of the lunch menu.`);
+    return lunches;
+  }
+}
+
 console.log(addLunchToEnd(lunches, "Tacos"));
 console.log(addLunchToStart(lunches, "Sushi"));
-console.log(lunches);
+console.log(removeLastLunch(lunches));
+console.log(removeFirstLunch(lunches));
