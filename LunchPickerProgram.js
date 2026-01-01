@@ -1,4 +1,4 @@
-let lunches = [];
+let lunches = ["Pizza", "Burger"];
 
 function addLunchToEnd(lunches, lunchItem) {
   lunches.push(lunchItem);
@@ -41,8 +41,17 @@ function getRandomLunch(lunches) {
   }
 }
 
+function showLunchMenu(lunches) {
+  if(lunches.length === 0) {
+    console.log("The menu is empty.");
+  } else {
+    console.log(`Menu items: ${lunches.join(", ")}`);
+  }
+}
+
 console.log(addLunchToEnd(lunches, "Tacos"));
 console.log(addLunchToStart(lunches, "Sushi"));
 console.log(removeLastLunch(lunches));
 console.log(removeFirstLunch(lunches));
 console.log(getRandomLunch(lunches));
+console.log(showLunchMenu(lunches));
