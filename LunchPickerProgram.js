@@ -12,5 +12,16 @@ function addLunchToStart(lunches, lunchItem) {
   return lunches;
 }
 
+function removeLastLunch(lunches) {
+  if (lunches.length === 0) {
+    console.log("No lunches to remove.");
+  } else {
+    let lastLunch = lunches.pop();
+    console.log(`${lastLunch} removed from the end of the lunch menu.`);
+    return lunches;
+  }
+}
+
 console.log(addLunchToEnd(lunches, "Tacos"));
 console.log(addLunchToStart(lunches, "Sushi"));
+console.log(lunches);
