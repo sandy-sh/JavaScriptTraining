@@ -1,118 +1,51 @@
-# JavaScriptTraining
+# JavaScriptTraining 🚀
 
-A collection of JavaScript challenge projects I completed while studying on freeCodeCamp.org.
-This repository serves as a learning log, code archive, and progress tracker for my JavaScript journey.
+A personal collection of focused JavaScript challenges and solutions completed while learning on **freeCodeCamp**. This repository is intended as a concise, easy-to-browse archive of small programs and algorithm exercises used to practice JavaScript fundamentals and problem-solving.
 
-## 📌 About This Repository
+## ✅ What you'll find here
 
-### This repository contains:
+- Small, self-contained JavaScript examples organized by topic
+- Algorithm and logic exercises with readable, beginner-friendly code
+- Short programs intended for learning, experimentation, and reference
 
-1.  Small JavaScript programs
+## 📂 Project structure
 
-2.  Coding challenges
+Top-level folders group challenges by topic. Examples:
 
-3.  Algorithm solutions
+- `Array/` — array-related exercises
+- `Function/` — function and scope problems
+- Individual files (e.g., `card-counter.js`, `LeapYearCalculator.js`) are standalone examples
 
-4.  Logic exercises
-that I completed from freeCodeCamp.
+> Note: Files are simple, runnable examples rather than production-ready libraries.
 
-### Each file represents a step in improving:
+## ⚡ Quick start
 
-1.  problem-solving skills
-
-2.  JavaScript fundamentals
-
-3.  algorithmic thinking
-
-## 🛠 Topics Covered
-
-### The challenges in this repository include:
-
-1.  Variables & Data Types
-
-2.  Functions & Scope
-
-3.  Conditionals (if, else, switch)
-
-4.  Loops
-
-5.  Arrays & Objects
-
-6.  String manipulation
-
-7.  Math & Logic
-
-8.  Algorithms
-
-9.  Debugging & Refactoring
-
-## 📂 Project Structure
-
-### Each file or folder contains:
-
-1.  One or more JavaScript challenges
-
-2.  Code written while completing freeCodeCamp exercises
-
-Example:
+1. Install Node.js (v12+ recommended).
+2. From the repository root run a single example:
 
 ```bash
-/basic-algorithms
-/loops
-/string-manipulation
-/card-counter.js
-/leap-year.js
+node Function/CelsiustoFahrenheitConverter.js
 ```
 
-_(Structure may change as the repository grows.)_
+3. Open files in VS Code or run them with `node` to experiment and modify behavior.
 
-## 🎯 Purpose
+## ✍️ Contributing
 
-### This repository is used to:
+Contributions are welcome! Please keep changes focused and small:
 
-1.  Track my learning progress
+1. Add or update a single example per pull request
+2. Name files descriptively and include brief comments explaining the approach
+3. Open an issue or PR if you'd like feedback or want to propose a refactor
 
-2.  Store all challenge solutions in one place
+## 📜 License
 
-3.  Practice writing clean and readable JavaScript
+This project is licensed under the terms in the `LICENSE` file.
 
-4.  Build a foundation for more advanced projects
+## 👤 Author
 
-## 🧪 How to Run the Code
+Sandy Syarif Hartanto — JavaScript learner & developer in progress
 
-### Most files can be run with:
+---
 
-```bash
-node filename.js
-```
-
-### Or tested inside:
-
-1.  Browser console
-
-2.  VS Code
-
-3.  Any JavaScript environment
-
-## 🚀 Future Plans
-
-### As my skills grow, this repository may expand to include:
-
-1.  More advanced JavaScript challenges
-
-2.  ES6+ features
-
-3.  Refactored solutions
-
-4.  Performance improvements
-
-## 📚 Learning Platform
-
-All challenges come from:
-https://www.freecodecamp.org
-
-## ✍️ Author
-
-Sandy Syarif Hartanto
-JavaScript learner & developer in progress 🚀
+Happy learning! 💡
 
