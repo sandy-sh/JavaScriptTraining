@@ -36,23 +36,38 @@ const questions = [
 
 
 function getRandomQuestion (questions) {
-  const question = Math.floor(Math.random() * questions.length);
-  return questions[question];
+  // const question = Math.floor(Math.random() * questions.length);
+  // return questions[question];
+
+  return questions[Math.floor(Math.random() * questions.length)];
 }
 
 function getRandomComputerChoice (choices) {
-  const choice = Math.floor(Math.random() * choices.length)
-  return choices[choice];
+  // const choice = Math.floor(Math.random() * choices.length)
+  // return choices[choice];
+  return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function getResults (getRandomQuestion, getRandomComputerChoice) {
-  const CompAnswer = getRandomComputerChoice;
-  const RightAnswer = getRandomQuestion.answer;
-  if (RightAnswer === CompAnswer) {
+function getResults (question, computerChoice) {
+  // const CompAnswer = getRandomComputerChoice;
+  // const RightAnswer = getRandomQuestion.answer;
+  // if (RightAnswer === CompAnswer) {
+  //   return "The computer's choice is correct!"
+  // } else {
+  //   return `The computer's choice is wrong. The correct answer is: ${RightAnswer}`
+  // }
+
+  if (computerChoice === question.answer) {
     return "The computer's choice is correct!"
   } else {
-    return `The computer's choice is wrong. The correct answer is: ${RightAnswer}`
+    return `The computer's choice is wrong. The correct answer is: ${question.answer}`
   }
 }
 
-console.log(questions);
+const question = getRandomQuestion(questions);
+const computerChoice = getRandomComputerChoice(question.choices);
+
+console.log("Category:", question.category);
+console.log(question.question);
+console.log("Computer's choice:", computerChoice);
+console.log(getResults(question, computerChoice));
