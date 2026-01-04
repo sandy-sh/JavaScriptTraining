@@ -36,7 +36,8 @@ const questions = [
 
 
 function getRandomQuestion (questions) {
-  return answer;
+  const question = Math.floor(Math.random() * questions.length);
+  return questions[question];
 }
 
 function getRandomComputerChoice (choices) {
