@@ -46,7 +46,13 @@ function getRandomComputerChoice (choices) {
 }
 
 function getResults (getRandomQuestion, getRandomComputerChoice) {
-
+  const CompAnswer = getRandomComputerChoice;
+  const RightAnswer = getRandomQuestion.answer;
+  if (RightAnswer === CompAnswer) {
+    return "The computer's choice is correct!"
+  } else {
+    return `The computer's choice is wrong. The correct answer is: ${RightAnswer}`
+  }
 }
 
 console.log(questions);
