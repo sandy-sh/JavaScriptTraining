@@ -1,30 +1,28 @@
 # JavaScriptTraining 🚀
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Last Commit](https://img.shields.io/github/last-commit/<owner>/<repo>)] [![Node](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org/) [![Examples](https://img.shields.io/badge/examples-16-blue)] [![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-A personal collection of focused JavaScript challenges and solutions completed while learning on **freeCodeCamp**. This repository is intended as a concise, easy-to-browse archive of small programs and algorithm exercises used to practice JavaScript fundamentals and problem-solving.
+A concise collection of focused JavaScript challenges and solutions completed while learning on **freeCodeCamp** and through practice exercises. This repository is intended as an easy-to-browse archive of small, runnable programs used to practice JavaScript fundamentals and problem-solving.
 
-## ✅ What you'll find here
+## 🔎 Current progress
+- **Total examples:** **16** ✅  
+- **Topics:** **4** folders — `Array`, `Function`, `Loops`, `Object`
 
-- Small, self-contained JavaScript examples organized by topic
-- Algorithm and logic exercises with readable, beginner-friendly code
-- Short programs intended for learning, experimentation, and reference
+| Topic | Examples |
+|---|---:|
+| `Array` | 2 |
+| `Function` | 7 |
+| `Loops` | 5 |
+| `Object` | 2 |
 
-## 📂 Project structure
+> Files are simple, runnable examples rather than production-ready libraries.
 
-Top-level folders group challenges by topic. Examples:
-
-- `Array/` — array-related exercises
-- `Function/` — function and scope problems
-- Individual files (e.g., `card-counter.js`, `LeapYearCalculator.js`) are standalone examples
-
-> Note: Files are simple, runnable examples rather than production-ready libraries.
+---
 
 ## ⚡ Quick start
-
-1. Install Node.js (v12+ recommended).
-2. From the repository root run a single example:
-
+1. Install Node.js (v14 or newer recommended).  
+2. Run an example from the repo root, for example:
 ```bash
-node Function/CelsiustoFahrenheitConverter.js
+    node Function/CelsiustoFahrenheitConverter.js
 ```
 
 3. Open files in VS Code or run them with `node` to experiment and modify behavior.
