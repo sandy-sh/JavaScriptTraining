@@ -1,5 +1,6 @@
 # JavaScriptTraining 🚀
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Last Commit](https://img.shields.io/github/last-commit/<owner>/<repo>)] [![Node](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org/) [![Examples](https://img.shields.io/badge/examples-16-blue)] [![Status](https://img.shields.io/badge/status-active-brightgreen)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)]
+[![Last Commit](https://img.shields.io/github/last-commit/<owner>/<repo>)] [![Node](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org/)] [![Examples](https://img.shields.io/badge/examples-16-blue)] [![Status](https://img.shields.io/badge/status-active-brightgreen)]
 
 A concise collection of focused JavaScript challenges and solutions completed while learning on **freeCodeCamp** and through practice exercises. This repository is intended as an easy-to-browse archive of small, runnable programs used to practice JavaScript fundamentals and problem-solving.
 
