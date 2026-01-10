@@ -1,16 +1,15 @@
 function largestOfAll (arr) {
-  let largest = 0;
-  let arrOfLargest = [];
+  let result = [];
 
-  for (const nums of arr) {
-    largest = nums[0];
+  for (const group of arr) {
+    let max = group[0];
+
     for (const num of nums) {
-      if (num > largest) {
-        largest = num;
+      if (num > max) {
+        max = num;
       }
     }
-    arrOfLargest.push(largest)
-    largest = 0;
+    result.push(max)
   }
 
   return arrOfLargest;
