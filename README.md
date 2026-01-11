@@ -1,21 +1,28 @@
-# JavaScriptTraining 🚀
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)]
-[![Last Commit](https://img.shields.io/github/last-commit/<owner>/<repo>)] [![Node](https://img.shields.io/badge/node-%3E%3D14-brightgreen)](https://nodejs.org/)] [![Examples](https://img.shields.io/badge/examples-16-blue)] [![Status](https://img.shields.io/badge/status-active-brightgreen)]
+# JavaScript Challenges 🚀
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D14-brightgreen)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
 A concise collection of focused JavaScript challenges and solutions completed while learning on **freeCodeCamp** and through practice exercises. This repository is intended as an easy-to-browse archive of small, runnable programs used to practice JavaScript fundamentals and problem-solving.
 
-## 🔎 Current progress
-- **Total examples:** **16** ✅  
-- **Topics:** **4** folders — `Array`, `Function`, `Loops`, `Object`
+## 📂 Repository Structure
 
-| Topic | Examples |
-|---|---:|
-| `Array` | 2 |
-| `Function` | 7 |
-| `Loops` | 5 |
-| `Object` | 2 |
+```
+javascript-challenges/
+│
+├── basic-js/                   # Core JS syntax & fundamentals
+├── string-algorithms/          # String manipulation
+├── array-algorithms/           # Array based algorithm
+├── object-manipulation/        # Working with object & collections
+├── higher-order-functions/     # Callbacks, predicates, HOFs
+├── math-algorithms/            # Math and number problems
+├── recursion/                  # Recursive solution
+├── data-structures/            # Stacks, queues, and structured data
+├── pattern-generation/         # Visual patterns
+└── utilities/                  # Reuseable helper & mini system
+```
 
-> Files are simple, runnable examples rather than production-ready libraries.
+> Each files are simple, readable, and runnable to the focus on logic and clarity
 
 ---
 
