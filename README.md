@@ -35,6 +35,14 @@ javascript-challenges/
 
 3. Open files in VS Code or run them with `node` to experiment and modify behavior.
 
+## ✍️ Contributing
+
+Contributions are welcome! Please keep changes focused and small:
+
+1. Add or update a single example per pull request
+2. Name files descriptively and include brief comments explaining the approach
+3. Open an issue or PR if you'd like feedback or want to propose a refactor
+
 ## 📜 License
 
 This project is licensed under the terms in the `LICENSE` file.
