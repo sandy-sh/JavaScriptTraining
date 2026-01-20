@@ -9,17 +9,19 @@ A concise collection of focused JavaScript challenges and solutions completed wh
 
 ```
 javascript-challenges/
-│
-├── basic-js/                   # Core JS syntax & fundamentals
-├── string-algorithms/          # String manipulation
-├── array-algorithms/           # Array based algorithm
-├── object-manipulation/        # Working with object & collections
-├── higher-order-functions/     # Callbacks, predicates, HOFs
-├── math-algorithms/            # Math and number problems
-├── recursion/                  # Recursive solution
-├── data-structures/            # Stacks, queues, and structured data
-├── pattern-generation/         # Visual patterns
-└── utilities/                  # Reuseable helper & mini system
+├───.vscode
+├───array-algorithms            # Array based algorithm   
+├───basic-js                    # Core JS syntax & fundamentals
+├───data-structures             # Stacks, queues, and structured data
+├───docs                        # JavaScript Documentation
+├───dom                         # DOM manipulation and events
+├───higher-order-functions      # Callbacks, predicates, HOFs
+├───math-algorithms             # Math and number problems
+├───object-manipulation         # Working with object & collections
+├───pattern-generation          # Visual patterns
+├───recursion                   # Recursive solution
+├───string-algorithms           # String manipulation
+└───utilities                   # Reuseable helper & mini system        
 ```
 
 > Each files are simple, readable, and runnable to the focus on logic and clarity
