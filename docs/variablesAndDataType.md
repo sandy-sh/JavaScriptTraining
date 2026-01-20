@@ -1,4 +1,4 @@
-### JavaScript Variables and Data Types
+# JavaScript Variables and Data Types
 
 ## Working with HTML, CSS, and JavaScript
 
@@ -9,12 +9,12 @@ While HTML and CSS provide website structure, JavaScript brings interactivity to
 Data types help the program understand the kind of data it's working with, whether it's a number, text, or something else.
 - **Number**: A number represents both integers and floating-point values. Examples of integers include 7, 19, and 90.
 - **Floating point**: A floating point number is a number with a decimal point. Examples include 3.14, 0.5, and 0.0001.
-- **String**: A string is a sequence of characters, or text, enclosed in quotes. "I like coding" and 'JavaScript is fun' are examples of strings.
-- **Boolean**: A boolean represents one of two possible values: true or false. You can use a boolean to represent a condition, such as isLoggedIn = true.
-- **Undefined and Null**: An undefined value is a variable that has been declared but not assigned a value. A null value is an empty value, or a variable that has intentionally been assigned a value of null.
+- **String**: A string is a sequence of characters, or text, enclosed in quotes. ``"I like coding"`` and ``'JavaScript is fun'`` are examples of strings.
+- **Boolean**: A boolean represents one of two possible values: ``true`` or ``false``. You can use a boolean to represent a condition, such as ``isLoggedIn = true``.
+- **Undefined and Null**: An ``undefined`` value is a variable that has been declared but not assigned a value. A ``null`` value is an empty value, or a variable that has intentionally been assigned a value of ``null``.
 - **Object**: An object is a collection of key-value pairs. The key is the property name, and the value is the property value.
 
-Here, the pet object has three properties or keys: name, age, and type. The values are Fluffy, 3, and dog, respectively.
+Here, the ``pet`` object has three properties or keys: ``name``, ``age``, and ``type``. The values are ``Fluffy``, ``3``, and ``dog``, respectively.
 
 ```JavaScript
     let pet = {
@@ -34,8 +34,8 @@ In this example below, two symbols are created with the same description, but th
     console.log(crypticKey1 === crypticKey2); // false
 ```
 
-- **BigInt**: When the number is too large for the Number data type, you can use the BigInt data type to represent integers of arbitrary length.
-By adding an n to the end of the number, you can create a BigInt.
+- **BigInt**: When the number is too large for the ``Number`` data type, you can use the BigInt data type to represent integers of arbitrary length.
+By adding an ``n`` to the end of the number, you can create a BigInt.
 
 ```JavaScript
     const veryBigNumber = 1234567890123456789012345678901234567890n;
@@ -43,43 +43,43 @@ By adding an n to the end of the number, you can create a BigInt.
 
 ## Variables in JavaScript
 
-- Variables can be declared using the let keyword.
+- Variables can be declared using the ``let`` keyword.
 
 ```JavaScript
     let cityName;
 ```
 
-- To assign a value to a variable, you can use the assignment operator =.
+- To assign a value to a variable, you can use the assignment operator ``=``.
 
 ```JavaScript
     cityName = "New York";
 ```
 
-- Variables declared using let can be reassigned a new value.
+- Variables declared using ``let`` can be reassigned a new value.
 
 ```JavaScript
     cityName = "Los Angeles";
     console.log(cityName); // Los Angeles
 ```
 
-- Apart from let, you can also use const to declare a variable. However, a const variable cannot be reassigned a new value.
+- Apart from ``let``, you can also use ``const`` to declare a variable. However, a ``const`` variable cannot be reassigned a new value.
 
 ```JavaScript
     const cityName = "New York";
     cityName = "Los Angeles"; // TypeError: Assignment to constant variable.
 ```
 
-- Variables declared using const find uses in declaring constants, that are not allowed to change throughout the code, such as PI or MAX_SIZE.
+- Variables declared using ``const`` find uses in declaring constants, that are not allowed to change throughout the code, such as ``PI`` or ``MAX_SIZE``.
 
 
 ## Variable Naming Conventions
 
 - Variable names should be descriptive and meaningful.
-- Variable names should be camelCase like cityName, isLoggedIn, and veryBigNumber.
-- Variable names should not start with a number. They must begin with a letter, _, or $.
-- Variable names should not contain spaces or special characters, except for _ and $.
+- Variable names should be camelCase like ``cityName``, ``isLoggedIn``, and ``veryBigNumber``.
+- Variable names should not start with a number. They must begin with a letter, ``_``, or ``$``.
+- Variable names should not contain spaces or special characters, except for ``_`` and ``$``.
 - Variable names should not be reserved keywords.
-- Variable names are case-sensitive. age and Age are different variables.
+- Variable names are case-sensitive. ``age`` and ``Age`` are different variables.
 
 ## Strings and String immutability in JavaScript
 
@@ -99,7 +99,7 @@ By adding an n to the end of the number, you can create a BigInt.
 
 ## String Concatenation in JavaScript
 
-- Concatenation is the process of joining multiple strings or combining strings with variables that hold text. The + operator is one of the simplest and most frequently used methods to concatenate strings.
+- Concatenation is the process of joining multiple strings or combining strings with variables that hold text. The ``+`` operator is one of the simplest and most frequently used methods to concatenate strings.
 
 ```JavaScript
     let studentName = "Asad";
@@ -108,7 +108,7 @@ By adding an n to the end of the number, you can create a BigInt.
     console.log(studentInfo); // Asad is 25 years old. 
 ```
 
-- If you need to add or append to an existing string, then you can use the += operator. This is helpful when you want to build upon a string by adding more text to it over time.
+- If you need to add or append to an existing string, then you can use the ``+=`` operator. This is helpful when you want to build upon a string by adding more text to it over time.
 
 ```JavaScript
     let message = "Welcome to programming, ";
@@ -116,7 +116,7 @@ By adding an n to the end of the number, you can create a BigInt.
     console.log(message); // Welcome to programming, Asad!
 ```
 
-- Another way you can concatenate strings is to use the concat() method. This method joins two or more strings together.
+- Another way you can concatenate strings is to use the ``concat()`` method. This method joins two or more strings together.
 
 ```JavaScript
     let firstName = "John";
@@ -125,9 +125,9 @@ By adding an n to the end of the number, you can create a BigInt.
     console.log(fullName); // John Doe
 ```
 
-## Logging Messages with console.log()
+## Logging Messages with ``console.log()``
 
-- The console.log() method is used to log messages to the console. It's a helpful tool for debugging and testing your code.
+- The ``console.log()`` method is used to log messages to the console. It's a helpful tool for debugging and testing your code.
 
 ```JavaScript
     console.log("Hello, World!");
@@ -148,13 +148,13 @@ By adding an n to the end of the number, you can create a BigInt.
 ## Comments in JavaScript
 
 - Any line of code that is commented out is ignored by the JavaScript engine. Comments are used to explain code, make notes, or temporarily disable code.
-- Single-line comments are created using //.
+- Single-line comments are created using ``//``.
 
 ```JavaScript
     // This is a single-line comment and will be ignored by the JavaScript engine
 ```
 
-- Multi-line comments are created using /* to start the comment and */ to end the comment.
+- Multi-line comments are created using ``/*`` to start the comment and ``*/`` to end the comment.
 
 ```JavaScript
     /*
@@ -179,9 +179,9 @@ By adding an n to the end of the number, you can create a BigInt.
     error = "Not Found"; // This would cause an error in C#
 ```
 
-## Using the typeof Operator
+## Using the ``typeof`` Operator
 
-- The typeof operator is used to check the data type of a variable. It returns a string indicating the type of the variable.
+- The ``typeof`` operator is used to check the data type of a variable. It returns a string indicating the type of the variable.
 
 ```JavaScript
     let age = 25;
@@ -191,7 +191,7 @@ By adding an n to the end of the number, you can create a BigInt.
     console.log(typeof isLoggedIn); // "boolean"
 ```
 
-- However, there's a well-known quirk in JavaScript when it comes to null. The typeof operator returns "object" for null values.
+- However, there's a well-known quirk in JavaScript when it comes to ``null``. The ``typeof`` operator returns ``"object"`` for ``null`` values.
 
 ```JavaScript
     let user = null;

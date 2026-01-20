@@ -1,22 +1,22 @@
-### JavaScript Math
+# JavaScript Math
 
 ## Working with the Number Data Type
 
-- **Definition**: JavaScript's Number type includes integers, floating-point numbers, Infinity and NaN. Floating-point numbers are numbers with a decimal point. Positive Infinity is a number greater than any other number while -Infinity is a number smaller than any other number. NaN (Not a Number) represents an invalid numeric value like the string "Jessica".
+- **Definition**: JavaScript's ``Number`` type includes integers, floating-point numbers, ``Infinity`` and ``NaN``. Floating-point numbers are numbers with a decimal point. Positive ``Infinity`` is a number greater than any other number while ``-Infinity`` is a number smaller than any other number. NaN (Not a Number) represents an invalid numeric value like the string ``"Jessica"``.
 
 ## Common Arithmetic Operations
 
-- **Addition Operator**: This operator (+) is used to calculate the sum of two or more numbers.
-- **Subtraction Operator**: This operator (-) is used to calculate the difference between two numbers.
-- **Multiplication Operator**: This operator (*) is used to calculate the product of two or more numbers.
-- **Division Operator**: This operator (/) is used to calculate the quotient between two numbers
-- **Division By Zero**: If you try to divide by zero, JavaScript will return Infinity.
-- **Remainder Operator**: This operator(%) returns the remainder of a division.
-- **Exponentiation Operator**: This operator (**) raises one number to the power of another.
+- **Addition Operator**: This operator (``+``) is used to calculate the sum of two or more numbers.
+- **Subtraction Operator**: This operator (``-``) is used to calculate the difference between two numbers.
+- **Multiplication Operator**: This operator (``*``) is used to calculate the product of two or more numbers.
+- **Division Operator**: This operator (``/``) is used to calculate the quotient between two numbers
+- **Division By Zero**: If you try to divide by zero, JavaScript will return ``Infinity``.
+- **Remainder Operator**: This operator(``%``) returns the remainder of a division.
+- **Exponentiation Operator**: This operator (``**``) raises one number to the power of another.
 
 ## Calculations with Numbers and Strings
 
-- **Explanation**: When you use the + operator with a number and a string, JavaScript will coerce the number into a string and concatenate the two values. When you use the -, * or / operators with a string and number, JavaScript will coerce the string into a number and the result will be a number. For null and undefined, JavaScript treats null as 0 and undefined as NaN in mathematical operations.
+- **Explanation**: When you use the ``+`` operator with a number and a string, JavaScript will coerce the number into a string and concatenate the two values. When you use the ``-``, ``*`` or ``/`` operators with a string and number, JavaScript will coerce the string into a number and the result will be a number. For ``null`` and ``undefined``, JavaScript treats ``null`` as 0 and undefined as ``NaN`` in mathematical operations.
 
 ```JavaScript
     const result = 5 + '10';
@@ -63,7 +63,7 @@
     console.log(result3); // 512
 ```
 
-- **Definition**: Associativity informs us the direction in which an expression is evaluated when multiple operators of the same type exist. It defines whether the expression should be evaluated from left-to-right (left-associative) or right-to-left (right-associative). For example, the exponent operator is also right to left associative:
+- **Definition**: Associativity informs us the direction in which an expression is evaluated when multiple operators of the same type exist. It defines whether the expression should be evaluated from left-to-right (``left-associative``) or right-to-left (``right-associative``). For example, the exponent operator is also right to left associative:
 
 ```JavaScript
     const result4 = 5 ** 4 ** 1; // 625
@@ -73,7 +73,7 @@
 
 ## Increment and Decrement Operators
 
-- **Increment Operator**: This operator is used to increase the value by one. The prefix notation ++num increases the value of the variable first, then returns a new value. The postfix notation num++ returns the current value of the variable first, then increases it.
+- **Increment Operator**: This operator is used to increase the value by one. The prefix notation ``++num`` increases the value of the variable first, then returns a new value. The postfix notation ``num++`` returns the current value of the variable first, then increases it.
 
 ```JavaScript
     let x = 5;
@@ -100,37 +100,37 @@
 
 ## Compound Assignment Operators
 
-- **Addition Assignment (+=) Operator**: This operator performs addition on the values and assigns the result to the variable.
-- **Subtraction Assignment (-=) Operator**: This operator performs subtraction on the values and assigns the result to the variable.
-- **Multiplication Assignment (*=) Operator**: This operator performs multiplication on the values and assigns the result to the variable.
-- **Division Assignment (/=) Operator**: This operator performs division on the values and assigns the result to the variable.
-- **Remainder Assignment (%=) Operator**: This operator divides a variable by the specified number and assigns the remainder to the variable.
-- **Exponentiation Assignment (**=) Operator**: This operator raises a variable to the power of the specified number and reassigns the result to the variable.
+- **Addition Assignment (``+=``) Operator**: This operator performs addition on the values and assigns the result to the variable.
+- **Subtraction Assignment (``-=``) Operator**: This operator performs subtraction on the values and assigns the result to the variable.
+- **Multiplication Assignment (``*=``) Operator**: This operator performs multiplication on the values and assigns the result to the variable.
+- **Division Assignment (``/=``) Operator**: This operator performs division on the values and assigns the result to the variable.
+- **Remainder Assignment (``%=``) Operator**: This operator divides a variable by the specified number and assigns the remainder to the variable.
+- **Exponentiation Assignment (``**=``) Operator**: This operator raises a variable to the power of the specified number and reassigns the result to the variable.
 
 ## Booleans and Equality
 
-- **Boolean Definition**: A boolean is a data type that can only have two values: true or false.
-- **Equality (==) Operator**: This operator uses type coercion before checking if the values are equal.
+- **Boolean Definition**: A boolean is a data type that can only have two values: ``true`` or ``false``.
+- **Equality (``==``) Operator**: This operator uses type coercion before checking if the values are equal.
 
 ```JavaScript
     console.log(5 == '5'); // true
 ```
 
-- **Strict Equality (===) Operator**: This operator does not perform type coercion and checks if both the types and values are equal.
+- **Strict Equality (``===``) Operator**: This operator does not perform type coercion and checks if both the types and values are equal.
 
 ```JavaScript
     console.log(5 === '5'); // false
 ```
 
-- **Inequality (!=) Operator**: This operator uses type coercion before checking if the values are not equal.
-- **Strict Inequality (!==) Operator**: This operator does not perform type coercion and checks if both the types and values are not equal.
+- **Inequality (``!=``) Operator**: This operator uses type coercion before checking if the values are not equal.
+- **Strict Inequality (``!==``) Operator**: This operator does not perform type coercion and checks if both the types and values are not equal.
 
 ## Other Common String Methods
 
-- **Greater Than (>) Operator**: This operator checks if the value on the left is greater than the one on the right.
-- **Greater Than (>=) or Equal Operator**: This operator checks if the value on the left is greater than or equal to the one on the right.
-- **Less Than (<) Operator**: This operator checks if the value on the left is less than the one on the right.
-- **Less Than (<=) or Equal Operator**: This operator checks if the value on the left is less than or equal to the one on the right.
+- **Greater Than (``>``) Operator**: This operator checks if the value on the left is greater than the one on the right.
+- **Greater Than (``>=``) or Equal Operator**: This operator checks if the value on the left is greater than or equal to the one on the right.
+- **Less Than (``<``) Operator**: This operator checks if the value on the left is less than the one on the right.
+- **Less Than (``<=``) or Equal Operator**: This operator checks if the value on the left is less than or equal to the one on the right.
 
 ## Unary Operators
 
@@ -144,29 +144,29 @@
     console.log(typeof num); // number
 ```
 
-- **Unary Negation (-) Operator**: This operator negates the operand.
+- **Unary Negation (``-``) Operator**: This operator negates the operand.
 
 ```JavaScript
     const num = 4;
     console.log(-num); // -4
 ```
 
-- **Logical NOT (!) Operator**: This operator flips the boolean value of its operand. So, if the operand is true, it becomes false, and if it's false, it becomes true. 
+- **Logical NOT (``!``) Operator**: This operator flips the boolean value of its operand. So, if the operand is ``true``, it becomes ``false``, and if it's ``false``, it becomes ``true``. 
 
 ## Bitwise Operators
 
-- **Bitwise AND (&) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of both operands are 1.
-- **Bitwise AND Assignment (&=) Operator**: This operator performs a bitwise AND operation with the specified number and reassigns the result to the variable.
-- **Bitwise OR (|) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of either or both operands are 1.
-- **Bitwise OR Assignment (|=) Operator**: This operator performs a bitwise OR operation with the specified number and reassigns the result to the variable.
-- **Bitwise XOR (^) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of either, but not both, operands are 1.
-- **Bitwise NOT (~) Operator**: This operator inverts the binary representation of a number.
-- **Left Shift (<<) Operator**: This operator shifts all bits to the left by a specified number of positions.
-- **Right Shift (>>) Operator**: This operator shifts all bits to the right.
+- **Bitwise AND (``&``) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of both operands are 1.
+- **Bitwise AND Assignment (``&=``) Operator**: This operator performs a bitwise AND operation with the specified number and reassigns the result to the variable.
+- **Bitwise OR (``|``) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of either or both operands are 1.
+- **Bitwise OR Assignment (``|=``) Operator**: This operator performs a bitwise OR operation with the specified number and reassigns the result to the variable.
+- **Bitwise XOR (``^``) Operator**: This operator returns a 1 in each bit position for which the corresponding bits of either, but not both, operands are 1.
+- **Bitwise NOT (``~``) Operator**: This operator inverts the binary representation of a number.
+- **Left Shift (``<<``) Operator**: This operator shifts all bits to the left by a specified number of positions.
+- **Right Shift (``>>``) Operator**: This operator shifts all bits to the right.
 
 ## Conditional Statements, Truthy Values, Falsy Values and the Ternary Operator
 
-- if/else if/else: An if statement takes a condition and runs a block of code if that condition is truthy. If the condition is false, then it moves to the else if block. If none of those conditions are true, then it will execute the else clause. Truthy values are any values that result in true when evaluated in a Boolean context like an if statement. Falsy values are values that evaluate to false in a Boolean context.
+- **``if/else if/else``**: An ``if`` statement takes a condition and runs a block of code if that condition is ``truthy``. If the condition is ``false``, then it moves to the ``else if`` block. If none of those conditions are ``true``, then it will execute the ``else`` clause. ``Truthy`` values are any values that result in ``true`` when evaluated in a Boolean context like an ``if`` statement. ``Falsy`` values are values that evaluate to ``false`` in a Boolean context.
 
 ```JavaScript
     const score = 87;
@@ -182,7 +182,7 @@
     }
 ```
 
-- **Ternary Operator**: This operator is often used as a shorter way to write if else statements.
+- **Ternary Operator**: This operator is often used as a shorter way to write ``if else`` statements.
 
 ```JavaScript
     const temperature = 30;
@@ -193,7 +193,7 @@
 
 ## Binary Logical Operators
 
-- **Logical AND (``&&``) Operator**: This operator checks if both operands are true. If both are true, then it will return the second value. If either operand is falsy, then it will return the falsy value. If both operands are falsy, it will return the first falsy value.
+- **Logical AND (``&&``) Operator**: This operator checks if both operands are ``true``. If both are ``true``, then it will return the second value. If either operand is ``falsy``, then it will return the ``falsy`` value. If both operands are ``falsy``, it will return the first ``falsy`` value.
 
 ```JavaScript
     const result = true && 'hello';
@@ -202,7 +202,7 @@
 ```
 
 - **Logical OR (``||``) Operator**: This operator checks if at least one of the operands is truthy. 
-- **Nullish Coalescing (``??``) Operator**: This operator will return a value only if the first one is null or undefined.
+- **Nullish Coalescing (``??``) Operator**: This operator will return a value only if the first one is ``null`` or ``undefined``.
 
 ```JavaScript
     const userSettings = {
@@ -215,7 +215,7 @@
     console.log(theme); // light
 ```
 
-## The Math Object
+## The ``Math`` Object
 
 - **The ``Math.random()`` Method**: This method generates a random floating-point number between 0 (inclusive) and 1 (exclusive). This means the possible output can be 0, but it will never actually reach 1.
 - **The ``Math.max()`` Method**: This method takes a set of numbers and returns the maximum value.
@@ -259,5 +259,5 @@
 ```
 
 - **The ``parseFloat()`` Method**: This method parses a string argument and returns a floating-point number. It's designed to extract a number from the beginning of a string, even if the string contains non-numeric characters later on.
-- **The ``parseInt()`` Method**: This method parses a string argument and returns an integer. parseInt() stops parsing at the first non-digit it encounters. For floating-point numbers, it returns only the integer part. If it can't find a valid integer at the start of the string, it returns NaN.
+- **The ``parseInt()`` Method**: This method parses a string argument and returns an integer. parseInt() stops parsing at the first non-digit it encounters. For floating-point numbers, it returns only the integer part. If it can't find a valid integer at the start of the string, it returns ``NaN``.
 - **The ``toFixed()`` Method**: This method is called on a number and takes one optional argument, which is the number of digits to appear after the decimal point. It returns a string representation of the number with the specified number of decimal places.
