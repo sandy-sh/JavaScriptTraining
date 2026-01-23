@@ -98,3 +98,103 @@
     console.log(desserts); // ["cake", "cookies"];
 ```
 
+- **``shift()`` Method**: This method is used to remove the first element from an array and return that removed element. If the array is empty, then the return value will be ``undefined``.
+
+```JavaScript
+    const desserts = ["cake", "cookies", "pie"];
+    desserts.shift();
+
+    console.log(desserts); // ["cookies", "pie"];
+```
+
+- **``unshift()`` Method**: This method is used to add elements to the beginning of the array and will return the new length.
+
+```JavaScript
+    const desserts = ["cake", "cookies", "pie"];
+    desserts.unshift("ice cream");
+
+    console.log(desserts); // ["ice cream", "cake", "cookies", "pie"];
+```
+
+- **``indexOf()`` Method**: This method is useful for finding the first index of a specific element within an array. If the element cannot be found, then it will return ``-1``.
+
+```JavaScript
+    const fruits = ["apple", "banana", "orange", "banana"];
+    const index = fruits.indexOf("banana");
+
+    console.log(index); // 1
+    console.log(fruits.indexOf("not found")); // -1
+```
+
+- **``splice()`` Method**: This method is used to add or remove elements from any position in an array. The return value for the ``splice()`` method will be an array of the items removed from the array. If nothing is removed, then an empty array will be returned. This method will mutate the original array, modifying it in place rather than creating a new array. The first argument specifies the index at which to begin modifying the array. The second argument is the number of elements you wish to remove. The following arguments are the elements you wish to add.
+
+```JavaScript
+    const colors = ["red", "green", "blue"];
+    colors.splice(1, 0, "yellow", "purple");
+
+    console.log(colors); // ["red", "yellow", "purple", "green", "blue"]
+```
+
+- **``includes()`` Method**: This method is used to check if an array contains a specific value. This method returns ``true`` if the array contains the specified element, and ``false`` otherwise.
+
+```JavaScript
+    const programmingLanguages = ["JavaScript", "Python", "C++"];
+
+    console.log(programmingLanguages.includes("Python")); // true
+    console.log(programmingLanguages.includes("Perl")); // false
+```
+
+- **``concat()`` Method**: This method creates a new array by merging two or more arrays.
+
+```JavaScript
+    const programmingLanguages = ["JavaScript", "Python", "C++"];
+    const newList = programmingLanguages.concat("Perl");
+
+    console.log(newList); // ["JavaScript", "Python", "C++", "Perl"]
+```
+
+- **``slice()`` Method**: This method returns a new array containing a shallow copy of a portion of the original array, specified by start and end indices. The new array contains references to the same elements as the original array (not duplicates). This means that if the elements are primitives (like numbers or strings), the values are copied; but if the elements are objects or arrays, the references are copied, not the objects themselves.
+
+```JavaScript
+    const programmingLanguages = ["JavaScript", "Python", "C++"];
+    const newList = programmingLanguages.slice(1);
+
+    console.log(newList); // ["Python", "C++"]
+```
+
+- **Spread Syntax**: The spread syntax is used to create shallow copies of an array.
+
+```JavaScript
+    const originalArray = [1, 2, 3];
+    const shallowCopiedArray = [...originalArray];
+
+    shallowCopiedArray.push(4);
+
+    console.log(originalArray); // [1, 2, 3]
+    console.log(shallowCopiedArray); // [1, 2, 3, 4]
+```
+
+- **``split()`` Method**: This method divides a string into an array of substrings and specifies where each split should happen based on a given separator. If no separator is provided, the method returns an array containing the original string as a single element.
+
+```JavaScript
+    const str = "hello";
+    const charArray = str.split("");
+
+    console.log(charArray); // ["h", "e", "l", "l", "o"]
+```
+
+- **``reverse()`` Method**: This method reverses an array in place.
+
+```JavaScript
+    const desserts = ["cake", "cookies", "pie"];
+    console.log(desserts.reverse()); // ["pie", "cookies", "cake"]
+```
+
+- **``join()`` Method**: This method concatenates all the elements of an array into a single string, with each element separated by a specified separator. If no separator is provided, or an empty string (``""``) is used, the elements will be joined without any separator.
+
+```JavaScript
+    const reversedArray = ["o", "l", "l", "e", "h"];
+    const reversedString = reversedArray.join("");
+
+    console.log(reversedString); // "olleh"
+```
