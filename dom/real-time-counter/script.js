@@ -1,6 +1,5 @@
 const input = document.getElementById("text-input");
 const charCount = document.getElementById("char-count");
-document.qu
 const maxLength = 50;
 const defaultCounterColor = "#6b7280";
 
