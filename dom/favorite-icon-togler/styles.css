@@ -1,0 +1,21 @@
+.item-list {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.favorite-icon {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.filled {
+    color: #dc2626;
+}
