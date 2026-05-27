@@ -109,5 +109,6 @@ function groupByZone(actions) {
 }
 
 function clonePantry(pantry) {
-
+  const cloned = JSON.parse(JSON.stringify(pantry));
+  return cloned;
 }
