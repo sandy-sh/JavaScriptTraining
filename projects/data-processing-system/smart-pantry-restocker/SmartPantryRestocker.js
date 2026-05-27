@@ -1,5 +1,6 @@
 const rawData = [
   "KHI-500 | Kopi Hitam 500gr | 100 | 2026 | dry ",
+  "KHI-500 | Kopi Hitam 500gr | 100 | 2026 | dry ",
   "KHI-250 | Kopi Hitam 250gr | 100 | 2026 | dry",
   "KSU-250 | Kopi Susu 250gr | 50 | 2026 | dry",
   "TCL-BOX | Teh Celup Kotak | 30 | 2027 | dry",
@@ -58,15 +59,28 @@ const newShipment = [
 
 function parseShipment(rawData) {
   const pantry = [];
+  const seen = new Set();
 
-  for(let i = 0; i < rawData.length; i++) {
+  for (let i = 0; i < rawData.length; i++) {
     const parts = rawData[i].split("|");
+    const sku = parts[0].trim();
+
+    // ignore duplicate SKUs - keep first occurrence
+    if (seen.has(sku)) continue;
+    seen.add(sku);
+
+    const name = parts[1] ? parts[1].trim() : "Unknown";
+    const qtyRaw = parts[2] ? parts[2].trim() : "Unknown";
+    const qty = qtyRaw !== "Unknown" ? parseInt(qtyRaw, 10) : 0;
+    const expires = parts[3] ? parts[3].trim() : "Unknown";
+    const zone = parts[4] && parts[4].trim() ? parts[4].trim() : "general";
+
     pantry.push({
-      sku: parts[0].trim(),
-      name: parts[1].trim(),
-      qty: parseInt(parts[2].trim()), 
-      expires: parts[3].trim(),
-      zone: parts[4] && parts[4].trim() ? parts[4].trim() : "general" 
+      sku: sku,
+      name: name,
+      qty: qty,
+      expires: expires,
+      zone: zone
     })
   }
 
@@ -127,5 +141,6 @@ function clonePantry(pantry) {
   return cloned;
 }
 
+console.log(pantry);
 console.log(planRestock(pantry, newShipment));
 console.log(groupByZone(planRestock(pantry, newShipment)));
