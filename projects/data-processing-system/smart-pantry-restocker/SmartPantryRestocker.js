@@ -35,6 +35,8 @@ function parseShipment(rawData) {
   return pantry;
 }
 
+console.log(parseShipment(rawData));
+
 function planRestock(pantry, shipment) {
 
 }
