@@ -46,6 +46,13 @@ const newShipment = [
     qty: 10,
     expires: "2027",
     zone: "dry"
+  },
+  {
+    sku: "NGG-CHK",
+    name: "Nugget Ayam Crispy 500gr",
+    qty: 10,
+    expires: "2027",
+    zone: ""
   }
 ];
 
@@ -106,10 +113,11 @@ function groupByZone(actions) {
   const grouped = {};
   for (let i = 0; i < actions.length; i++) {
     const action = actions[i];
-    if (!grouped[action.item.zone]) {
-      grouped[action.item.zone] = [];
+    const zone = action.item.zone || "general";
+    if (!grouped[zone]) {
+      grouped[zone] = [];
     }
-    grouped[action.item.zone].push(action.item);
+    grouped[zone].push(action.item);
   }
   return grouped;
 }
@@ -119,4 +127,5 @@ function clonePantry(pantry) {
   return cloned;
 }
 
+console.log(planRestock(pantry, newShipment));
 console.log(groupByZone(planRestock(pantry, newShipment)));
