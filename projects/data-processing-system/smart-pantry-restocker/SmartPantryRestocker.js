@@ -102,13 +102,21 @@ function planRestock(pantry, shipment) {
   return planAction;
 }
 
-console.log(planRestock(pantry, newShipment));
-
 function groupByZone(actions) {
-
+  const grouped = {};
+  for (let i = 0; i < actions.length; i++) {
+    const action = actions[i];
+    if (!grouped[action.item.zone]) {
+      grouped[action.item.zone] = [];
+    }
+    grouped[action.item.zone].push(action.item);
+  }
+  return grouped;
 }
 
 function clonePantry(pantry) {
   const cloned = JSON.parse(JSON.stringify(pantry));
   return cloned;
 }
+
+console.log(groupByZone(planRestock(pantry, newShipment)));
