@@ -1,62 +1,3 @@
-const rawData = [
-  "KHI-500 | Kopi Hitam 500gr | 100 | 2026 | dry ",
-  "KHI-500 | Kopi Hitam 500gr | 100 | 2026 | dry ",
-  "KHI-250 | Kopi Hitam 250gr | 100 | 2026 | dry",
-  "KSU-250 | Kopi Susu 250gr | 50 | 2026 | dry",
-  "TCL-BOX | Teh Celup Kotak | 30 | 2027 | dry",
-  
-  "SND-1LT | Susu Nasi Dingin 1L | 20 | 2026 | chilled",
-  "YGH-STR | Yogurt Strawberry | 45 | 2026 | chilled",
-  "KEJ-BLK | Keju Blok | 15 | 2026 | chilled",
-
-  "GRL-001 | Garam Dapur Lembut | 50 | 2028 | ", 
-  "GUL-PAS | Gula Pasir Putih | 40 | 2029",
-
-  "MIE-GNG | Mie Goreng Instan | 0 | 2026 | dry",
-  "SRA-BTL | Sirup Rasa Coco |  | 2027 | dry",
-
-  "BRS-WHT | Beras Putih Cianjur | 10 | unknown | dry", 
-  "MTR-UNK | Minyak Tanpa Rabel | 25 | 2026 | "
-]
-
-const newShipment = [
-  {
-    sku: "KHI-500",
-    name: "Kopi Hitam 500gr",
-    qty: 20,
-    expires: "2027",
-    zone: "dry"
-  },
-  {
-    sku: "TCL-BOX",
-    name: "Teh Celup Kotak",
-    qty: 0, 
-    expires: "2027",
-    zone: "dry"
-  },
-  {
-    sku: "SND-1LT",
-    name: "Susu Nasi Dingin 1L",
-    qty: 15,
-    expires: "2027",
-    zone: "chilled"
-  },
-  {
-    sku: "MIE-GNG",
-    name: "Mie Goreng Instan",
-    qty: 10,
-    expires: "2027",
-    zone: "dry"
-  },
-  {
-    sku: "NGG-CHK",
-    name: "Nugget Ayam Crispy 500gr",
-    qty: 10,
-    expires: "2027",
-    zone: ""
-  }
-];
-
 function parseShipment(rawData) {
   const pantry = [];
   const seen = new Set();
@@ -86,8 +27,6 @@ function parseShipment(rawData) {
 
   return pantry;
 }
-
-const pantry = parseShipment(rawData);
 
 function planRestock(pantry, shipment) {
   const planAction = [];
@@ -141,6 +80,23 @@ function clonePantry(pantry) {
   return cloned;
 }
 
-console.log(pantry);
-console.log(planRestock(pantry, newShipment));
-console.log(groupByZone(planRestock(pantry, newShipment)));
+const pantry = [
+  { sku: "A10", name: "Tomatoes", qty: 4, expires: "2027-01-01", zone: "fridge" },
+  { sku: "D43", name: "Pineapples", qty: 2, expires: "2020-01-01", zone: "general" }
+];
+
+const rawData = [
+  "A10|Tomatoes|5|2027-01-01", 
+  "B21|Bananas|10|2027-01-01", 
+  "C32|Eggs|3|2027-01-01|fridge", 
+  "C32|Eggs|3|2027-01-01", 
+  "D43|Pineapples|0|2027-01-01", 
+  "E54|Peppers|-1|2027-01-01|fridge"
+];
+
+const shipment = parseShipment(rawData);
+const pantryCopy = clonePantry(pantry);
+const actions = planRestock(pantryCopy, shipment);
+const grouped = groupByZone(actions);
+
+console.log(grouped);
