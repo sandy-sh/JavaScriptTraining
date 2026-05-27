@@ -19,7 +19,20 @@ const rawData = [
 ]
 
 function parseShipment(rawData) {
+  const pantry = [];
 
+  for(let i = 0; i < rawData.length; i++) {
+    const parts = rawData[i].split("|");
+    pantry.push({
+      sku: parts[0].trim(),
+      name: parts[1].trim(),
+      qty: parseInt(parts[2].trim()), 
+      expires: parts[3].trim(),
+      zone: parts[4] && parts[4].trim() ? parts[4].trim() : "general" 
+    })
+  }
+
+  return pantry;
 }
 
 function planRestock(pantry, shipment) {
