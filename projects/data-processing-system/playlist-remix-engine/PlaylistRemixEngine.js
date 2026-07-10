@@ -56,6 +56,8 @@ function flattenPlaylists (playlists) {
     return flattenplaylists
 }
 
+// console.log(flattenPlaylists(playlists)) // Clear
+
 function scoreTracks (flattenPlaylists) {
     const scoredPlaylists = [];
 
@@ -72,6 +74,8 @@ function scoreTracks (flattenPlaylists) {
     return scoredPlaylists;
 }
 
+// console.log(scoreTracks(flattenPlaylists(playlists))) // Clear
+
 function dedupeTracks (scoredPlayLists) {
     const seenTracks = new Set();
     const dedupeTracks = [];
@@ -79,34 +83,60 @@ function dedupeTracks (scoredPlayLists) {
     if (!Array.isArray(scoredPlayLists)) return [];
 
     for (const track of scoredPlayLists) {
-        if (!seenTracks.has(track.trackId)) {
-        seenTracks.add(track.trackId);
+        if (!seenTracks.has(track["trackId"])) {
+        seenTracks.add(track["trackId"]);
         dedupeTracks.push(track)
         }
     }
     return dedupeTracks
 }
 
-// console.log(dedupeTracks(scoreTracks(flattenPlaylists(playlists))))
+// console.log(dedupeTracks(scoreTracks(flattenPlaylists(playlists)))) // Clear
 
-function enforceArtistQuota (dedupeTracks, num) {
+function enforceArtistQuota (dedupeTracks, maxPerArtist) {
     const enforcePlaylists = [];
     const artist = {};
 
-    for (const track of dedupeTracks){
-        if (!artist.hasOwnProperty(track.artist)) {
-        
+    if (!Array.isArray(dedupeTracks)) return [];
+
+    for (const track of dedupeTracks) {
+        const artistName = track.artist;
+
+        if (!Object.hasOwn(artist, artistName)) {
+        artist[artistName] = 1;
+        enforcePlaylists.push(track);
+        }
+        else if (artist[artistName] < maxPerArtist) {
+        artist[artistName] += 1;
+        enforcePlaylists.push(track);
         }
     }
-    return artist
+
+    return enforcePlaylists;
 }
 
-console.log(enforceArtistQuota(dedupeTracks(scoreTracks(flattenPlaylists(playlists)))))
+// console.log(enforceArtistQuota(dedupeTracks(scoreTracks(flattenPlaylists(playlists))), 2)) // Clear
 
-function buildSchedule () {
+function buildSchedule (enforcePlaylists) {
+    const schedule = [];
+    let slot = 1;
 
+    if (!Array.isArray(enforcePlaylists)) return [];
+
+    for (const track of enforcePlaylists) {
+        schedule.push({
+        slot: slot,
+        trackId: track.trackId})
+        slot += 1;
+    }
+
+    return schedule;
 }
 
-function remixPlaylist () {
+// console.log(buildSchedule(enforceArtistQuota(dedupeTracks(scoreTracks(flattenPlaylists(playlists))), 2))) // Clear
 
+function remixPlaylist (playlists, maxPerArtist) {
+    return buildSchedule(enforceArtistQuota(dedupeTracks(scoreTracks(flattenPlaylists(playlists))), maxPerArtist))
 }
+
+console.log(remixPlaylist(playlists, 1)) // Clear
